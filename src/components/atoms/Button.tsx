@@ -1,16 +1,15 @@
-import React from 'react';
+import { clsx } from "@/libs/utils/helper";
+import React from "react";
 
-type ButtonProps = {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
-  onClick: () => void;
-};
+}
 
-const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ label, className, ...props }) => {
+  const classes = clsx("px-4 py-2 bg-blue-500 text-white rounded bg-danger", className);
+
   return (
-    <button
-      onClick={onClick}
-      className="px-4 py-2 bg-blue-500 text-white rounded"
-    >
+    <button className={classes} {...props}>
       {label}
     </button>
   );
