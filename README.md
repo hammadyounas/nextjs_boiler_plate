@@ -1,4 +1,4 @@
-# Poppel Frontend
+# NEXTJS BOILER PLATE
 
 ## Getting Started
 
