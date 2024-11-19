@@ -30,7 +30,7 @@ Components: Reusable components that are shared across the application.
 Pages: Each page has its own folder containing UI, functionality, and combined logic specific to that page.
 
 ## **2. Components Structure**
-In the [src/components] directory, components are organised based on atomic design:
+In the `src/components` directory, components are organised based on atomic design:
 - **Atoms**: The smallest UI elements, such as buttons, inputs, or labels. These handle purely visual aspects.
 - **Molecules**: Combinations of atoms, representing slightly more complex UI patterns. Molecules can manage their own state or logic when the behavior is specific to the molecule (like a toggle button, slider, or dropdown).
 - **Organisms**: Larger, more complex structures that combine multiple molecules and atoms. These represent significant UI components.
@@ -40,7 +40,7 @@ In the [src/components] directory, components are organised based on atomic desi
 
 
 ## **3. Pages Structure**
-Each page under [src/pages] is divided into four folders:
+Each page under `src/pages` is divided into four folders:
 - **UI Folder**: Contains the visual components for the page, including atoms, molecules, and organisms. These components handle only rendering, with no business logic.
 - **Functional Folder**: Manages the page-specific logic such as state management, API calls, and other business logic.
 - **Molecule-level logic**: If a specific molecule needs to manage its own state (e.g., a dropdown, toggle, or slider), the state is managed within that molecule. However, all molecules’ functional logic is combined at the organism level. This keeps logic scoped but ensures clean separation when building larger UI structures.
@@ -54,8 +54,9 @@ This point is critical: The **Combined folder exists only at the organism level 
 
 ## **5. Storybook Stories**
 Each component should have a corresponding Storybook story for visual documentation:
-- **Reusable Components**: Use the format Components/[Category]/[ComponentName].
-- **Page-Specific Components**: Use the format Pages/[PageName]/[Category]/[ComponentName].
+- **Reusable Components**: Use the format `Components/[Category]/[ComponentName]`.
+- **Page-Specific Components**: Use the format `Pages/[PageName]/[Category]/[ComponentName]`.
+
 Stories should cover the various states and scenarios the component might encounter, especially at the organism and page levels.
 
 ##  **6. Applying the Structure**
