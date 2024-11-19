@@ -1,4 +1,5 @@
-# NEXTJS BOILER PLATE
+# Nexjts Boiler Plate
+**Prepared by InApp Solutions**
 
 ## Getting Started
 
