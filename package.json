@@ -1,6 +1,8 @@
 {
-  "name": "peppol-frontend",
+  "name": "InApp-Solutions",
   "version": "0.1.0",
+  "author": "InApp Solutions <hello@inappsolutions.com> (www.inappsolutions.com)",
+  "description": "Basic Next.js project with Tailwind CSS",
   "private": true,
   "scripts": {
     "dev": "next dev",
